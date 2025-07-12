@@ -1,38 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My First GitHub Page</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Collection | Apex Auto Auctions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS linking -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/Porsche/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .car-card {
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        .car-card:hover {
+            transform: translateY(-10px);
+        }
+        .specs-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .specs-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .porsche-gold {
+            color: #cca300;
+        }
+        /* ✅ Make all car images the same size and well-aligned */
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
 </head>
-
 <body>
-<header>
-<h1>Welcome to CarXperience</h1> 
-  <nav>
-  <a href="index.html">Home</a> |
-  <a href="about.html">About</a> |
-  <a href="contact.html">Contact</a>| 
-</nav>
-</header>
-<main>
-<p>This is a simple webpage hosted on GitHub Pages.</p>
-  <p>Your go to destination for car reviews, expert tips, and all things automotive.Explore the world of cars with us and fuel your passion for the road</p>
-<p>Here's a picture of a car:</p>
-<img src="2021-Lamborghini-Aventador-exterior-B-1_o.jpg" height="250" width="300">
-<p>Visit <a href="https://github.com">GitHub</a> to learn more about coding.</p>
-   <p>Range Rover Evoque-P759000</p>
-  <p>Toyota GR6-P245000</p>
-  <p>BMX X4 Coupe-P921000</p>
-  <p>Lamborghini Aventor-P2300000</p>
-  <p>Mercedes Benz EClass 2025-P1500000</p>
-</main>
-<footer>
-<p>&copy; 2025 Nitamo</p>
-</footer>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Apex Auto Auctions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="porsche.html">Porsche</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Porsche Excellence</h1>
+            <p class="lead">Timeless design meets relentless engineering—where heritage powers innovation.</p>
+        </div>
+    </section>
+
+    <main class="container my-5">
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <h2 class="porsche-gold">The Porsche Legacy</h2>
+                <p>Since 1948, Porsche has defined German automotive precision. Each model in our collection represents the perfect balance between daily usability and track-ready performance that makes the Porsche crest legendary.</p>
+                <p>Our Porsche auctions feature meticulously maintained vehicles with complete service histories and Porsche Classic certification where applicable. Whether you seek a modern 911 Turbo S or a classic 356, Apex Auto Auctions connects you with exceptional examples.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/Porsche/first.jpeg" alt="Porsche Showroom" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <h2 class="text-center mb-4 porsche-gold">Current Porsche Listings</h2>
+        
+        <div class="row">
+            <!-- Porsche 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card car-card">
+                    <img src="images/Porsche/download.jpg" class="card-img-top" alt="Porsche 911 GT3">
+                    <div class="card-body">
+                        <dl>
+                            <dt>Porsche 1</dt>
+                            <dd>Elegant</dd>
+                            <dt>Auction Starting Price</dt>
+                            <dd>P950 000 000</dd>
+                        </dl>
+                        <a href="bid-form.html" class="btn btn-primary">
+                            Place a Bid
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Porsche 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card car-card">
+                    <img src="images/Porsche/P2.jpeg" class="card-img-top" alt="Porsche Taycan Turbo S">
+                    <div class="card-body">
+                        <dl>
+                            <dt>Porsche 2</dt>
+                            <dd>Supercar</dd>
+                            <dt>Auction starting price</dt>
+                            <dd>P700 000</dd>
+                        </dl>
+                        <a href="bid-form.html" class="btn btn-primary">
+                            Place a Bid
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Porsche 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card car-card">
+                    <img src="images/Porsche/p4.jpeg" class="card-img-top" alt="Porsche 918 Spyder">
+                    <div class="card-body">
+                        <dl>
+                            <dt>Porsche 3</dt>
+                            <dd>Old classic</dd>
+                            <dt>Auction starting price</dt>
+                            <dd>P400 000</dd>
+                        </dl>
+                        <a href="bid-form.html" class="btn btn-primary">
+                            Place a Bid
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Porsche 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card car-card">
+                    <img src="images/Porsche/Zu Verkaufen_ Porsche 718 Spyder RS 2024 - elferspot_com.jpg" class="card-img-top" alt="Porsche 911 Carrera RS">
+                    <div class="card-body">
+                        <dl>
+                            <dt>Porsche 4</dt>
+                            <dd>Versatile</dd>
+                            <dt>Auction starting price</dt>
+                            <dd>P750 000</dd>
+                        </dl>
+                        <a href="bid-form.html" class="btn btn-primary">
+                                 Place a Bid
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Porsche 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card car-card">
+                    <img src="images/Porsche/Post by @porsche-phile · 1 image.jpg" class="card-img-top" alt="Porsche 911 GT2 RS">
+                    <div class="card-body">
+                        <dl>
+                            <dt>Porsche 5</dt>
+                            <dd>Luxurious</dd>
+                            <dt>Auction starting price</dt>
+                            <dd>P900 000</dd>
+                        </dl>
+                        <a href="bid-form.html" class="btn btn-primary">
+                                 Place a Bid
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Porsche 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card car-card">
+                    <img src="images/Porsche/P7.jpeg" class="card-img-top" alt="Porsche 356 Speedster">
+                    <div class="card-body">
+                        <dl>
+                            <dt>Porsche 6</dt>
+                            <dd>Furistic</dd>
+                            <dt>Auction starting price</dt>
+                            <dd>P825 000</dd>
+                        </dl>
+                        <a href="bid-form.html" class="btn btn-primary">
+                                Place a Bid
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Apex Auto Auctions</h5>
+                    <p>Specializing in the world's finest luxury and performance vehicles since 2010.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <address>
+                        P O Box 29<br>
+                        Gaborone, Botswana<br>
+                        (267) 71 543 215
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Apex Auto Auctions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
+
+ 
 
